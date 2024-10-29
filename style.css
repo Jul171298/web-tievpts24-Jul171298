@@ -1,0 +1,27 @@
+div {
+    margin: 1px;
+    border: 1px solid black;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.root-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.root-content {
+    flex-grow: 4;
+}
+
+.root-header {
+    flex-grow: 1;
+}
+
+.root-footer{
+    flex-grow: 2;
+}
