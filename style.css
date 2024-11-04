@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 div {
     margin: 1px;
     border: 1px solid black;
@@ -6,6 +10,7 @@ div {
 html, body {
     height: 100%;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .root-container {
@@ -14,17 +19,57 @@ html, body {
     flex-direction: column;
 }
 
-.root-content {
-    flex-grow: 4;
-}
-
 .root-header {
-    flex-grow: 0;
     display: flex;
     justify-content: space-between;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.main-nav {
+    flex-grow: 1;
+}
+
+.main-nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: blue;
+}
+
+.user-nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: blue;
 }
 
 
+.root-content {
+    flex-grow: 4;
+    padding: 10px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-bar label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.search-bar input {
+    padding: 5px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
 
 .root-footer{
     flex-grow: 0;
