@@ -4,7 +4,6 @@
 
 div {
     margin: 1px;
-    border: 1px solid black;
 }
 
 html, body {
@@ -23,11 +22,13 @@ html, body {
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    border: 1px solid black;
+    background-color: lightblue;
 }
 
 .main-nav {
     flex-grow: 1;
+    display: flex;
+    align-items: center;
 }
 
 .main-nav a {
@@ -127,25 +128,39 @@ html, body {
 .root-footer{
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-    border-top: 1px solid black;
-    background-color: #f9f9f9;
+    padding: 20px;
+    background-color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .footer-left {
     max-width: 50%;
 }
 
-.footer-right {
-    text-align: right;
-}
-
-.footer-right a {
-    display: block;
-    color: blue;
-    text-decoration: none;
+.footer-left p {
     margin: 5px 0;
 }
 
+.footer-right {
+    width: 50%;
+    text-align: right;
+}
+
+
+.footer-right .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer-right .footer-links a {
+    margin: 3px 0;
+    text-decoration: none;
+    color: #000;
+}
+
+.footer-right .footer-links a:hover {
+    text-decoration: underline;
+}
 
 
