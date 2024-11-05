@@ -139,12 +139,14 @@ html, body {
 
 .footer-left p {
     margin: 5px 0;
+    padding: 10px;
 }
 
 .footer-right {
     width: 50%;
     text-align: right;
 }
+
 
 
 .footer-right .footer-links {
