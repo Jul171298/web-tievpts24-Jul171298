@@ -71,6 +71,67 @@ html, body {
     font-size: 16px;
 }
 
-.root-footer{
-    flex-grow: 0;
+.article {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin:  0;
 }
+
+.article h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.article-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+    padding: 50px;
+}
+
+.article-content p {
+    flex: 2;
+    margin-right: 10px;
+}
+
+.image-left .article-content{
+    flex-direction: row;
+}
+
+.image-right .article-content {
+    flex-direction: row-reverse;
+}
+
+.article-image {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    margin: 0;
+}
+
+.root-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-top: 1px solid black;
+    background-color: #f9f9f9;
+}
+
+.footer-left {
+    max-width: 50%;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-right a {
+    display: block;
+    color: blue;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+
+
