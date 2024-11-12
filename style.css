@@ -145,105 +145,84 @@ a {
 
 
 .layout-content {
-    margin-top: 20px;
+    width: 100%;
+}
+
+.layout-container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
 }
 
 .section-grid {
-    margin: 50px 0;
-
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-gap: 40px 20px;
+    padding: 20px 0;
+    color: #ffffff;
 }
+
+.section-header h2 {
+    font-size: 2em;
+    color: #ffffff;
+    text-align: left; 
+    margin-bottom: 20px;
+}
+
 
 .article-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 40px 20px;
+    gap: 20px;
+    width: 100%;
 }
 
-.article-grid > article {
-    position: relative;
+
+.wide {
+    grid-column: span 2;
 }
 
-.section-header h2 {
-    color: #E9ECF3;
-    font-size:   25px;
-    line-height: 1.15;
 
-    position: sticky;
-    top: 20px;
-    z-index: 50;
+article {
+    background-color: #0b132b; 
+    border-radius: 10px; 
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.article-image {
-    position: relative;
+
+
+.article-image img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #333; 
 }
 
 
 .article-info {
-    margin-top: 8px;
+    padding: 15px;
+}
+
+.article-date {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 8px;
 }
 
 .article-title {
-    font-size:   18px;
-    line-height: 1.333333;
-
-    margin: 8px 0;
-}
-
-.article-title > a {
-    text-decoration: none;
-}
-
-
-.article-date {
-    color:       #B1B1B1;
-    font-size:   12px;
-    line-height: 1.75;
+    font-size: 1.4em;
     font-weight: bold;
+    margin: 10px 0;
 }
 
-.article-link::after {
-    content: "";
-
-    display: block;
-
-    position: absolute;
-    top:    0;
-    right:  0;
-    bottom: 0;
-    left:   0;
+.article-title .article-link {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2s ease;
 }
 
 
-.article-grid > .wide {
-    grid-column-end: span 2;
-}
-
-.wide .article-title {
-    font-size:   25px;
-    line-height: 1.25;
-}
-
-.article {
-    grid-column-end: span 2;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 20px;
-}
-
-.article .article-info {
-    margin-top: 0;
-
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: stretch;
-}
-
-.article .article-title {
-    flex: 1 0 auto;
+.article-text {
+    font-size: 1em;
+    color: #b0b3c4;
+    line-height: 1.6;
 }
 
 .layout-footer {

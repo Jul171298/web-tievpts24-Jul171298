@@ -145,27 +145,29 @@ a {
 }
 
 .sidebar {
-    width: 150px;
+    width: 150px; 
     padding: 20px;
-    background-color: #1b1f36;
-    border-right: 1px solid #2d3a4e;
+    background-color: #1c1e2a;
+    color: #a1a1c1;
+    border-right: 1px solid #3a3a5d;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
 }
 
 .sidebar a {
-    display: block;
-    color: #cbd4e0;
+    color: #a1a1c1;
     text-decoration: none;
-    margin-bottom: 15px;
+    padding: 10px 0;
     font-weight: bold;
-    transition: color 0.3s;
 }
 
 .sidebar a:hover {
-    color: #f3f3f3;
+    color: #ffffff;
 }
 
 .breadcrumbs {
-    font-size: 20px;
+    font-size: 18px;
     color: #cbd4e0;
     text-align: left;
 }
@@ -295,7 +297,7 @@ a {
 }
 
 .job {
-    background-color: #7185a4;
+    background-color: #334561;
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 15px;
