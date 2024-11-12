@@ -146,9 +146,9 @@ a {
 
 .about-page {
     display: flex;
-    color: #cbd4e0; /* Світлий текст для контрасту */
+    color: #cbd4e0;
     font-family: Arial, sans-serif;
-    background-color: #0b132b; /* Темний фон */
+    background-color: #0b132b; 
 }
 
 .sidebar {
@@ -173,7 +173,7 @@ a {
 
 .content {
     flex: 1;
-    padding: 20px;
+    padding: 80px;
 }
 
 .about-section, .customers-section, .values-section, .environment-section {
@@ -233,6 +233,7 @@ a {
     justify-content: space-between; 
     gap: 10px;
     padding: 10px;
+    margin: 0;
 }
 
 .values-image img {
@@ -248,7 +249,9 @@ a {
 
 
 .layout-footer {
-    background-color: #131C2F; 
+    background: #131C2F;
+    border-top: 1px solid rgba(233, 236, 243, 0.25);
+    box-shadow: 0px 4px 10px #000000; 
     padding: 40px 0;
     color: #ffffff;
     font-family: Arial, sans-serif;
@@ -295,7 +298,7 @@ a {
 }
 
 .footer-nav a:hover {
-    color: #f3f3f3; /* Світліший колір при наведенні */
+    color: #f3f3f3;
 }
 
 .footer-social {

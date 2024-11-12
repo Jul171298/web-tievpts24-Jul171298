@@ -107,7 +107,6 @@ a {
 
 
 
-
 .search-bar input[type="text"] {
     padding: 8px 15px;
     border: 1px solid #2d2d3d;
@@ -140,9 +139,9 @@ a {
 
 .about-page {
     display: flex;
-    color: #cbd4e0; /* Світлий текст для контрасту */
+    color: #cbd4e0; 
     font-family: Arial, sans-serif;
-    background-color: #0b132b; /* Темний фон */
+    background-color: #0b132b;
 }
 
 .sidebar {
@@ -168,14 +167,14 @@ a {
 .breadcrumbs {
     font-size: 20px;
     color: #cbd4e0;
-    margin: 20px 0;
-    padding: 10px;
     text-align: left;
 }
 
 .breadcrumbs a {
     color: #8cccfa;
     text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
     transition: color 0.3s;
 }
 
@@ -185,11 +184,13 @@ a {
 
 .breadcrumbs span {
     color: #cbd4e0;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .content {
     flex: 1;
-    padding: 20px;
+    padding: 80px;
 }
 
 .team-intro {
@@ -207,8 +208,7 @@ a {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
-    padding: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .team-member {
@@ -218,11 +218,10 @@ a {
     text-align: center;
     color: #cbd4e0;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
+    
 }
 
 .team-member:hover {
-    transform: translateY(-5px);
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
 }
 
@@ -257,7 +256,7 @@ a {
 
 
 .job-openings {
-    margin-top: 40px;
+    margin-top: 20px;
     padding: 20px;
     background-color: #1b1f36;
     border-radius: 8px;
@@ -297,7 +296,9 @@ a {
 
 
 .layout-footer {
-    background-color: #131C2F; 
+    background: #131C2F;
+    border-top: 1px solid rgba(233, 236, 243, 0.25);
+    box-shadow: 0px 4px 10px #000000; 
     padding: 40px 0;
     color: #ffffff;
     font-family: Arial, sans-serif;
