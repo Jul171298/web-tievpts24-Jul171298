@@ -148,12 +148,6 @@ a {
     width: 100%;
 }
 
-.layout-container {
-    max-width: 1200px; 
-    margin: 0 auto; 
-    padding: 0 20px; 
-}
-
 .section-grid {
     padding: 20px 0;
     color: #ffffff;
