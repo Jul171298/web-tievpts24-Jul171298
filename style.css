@@ -2,6 +2,8 @@
 * {
     box-sizing: border-box;
     color: white;
+    margin: 0;
+    padding: 0;
 }
 
 *,
@@ -580,8 +582,11 @@ h1 {
     background-color: #1c233a;
     padding: 20px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 }
 
 .game-card:hover {
@@ -603,13 +608,19 @@ h1 {
 .game-card p {
     font-size: 0.9rem;
     line-height: 1.4;
+    flex-grow: 1;
 }
 
 .developer {
     font-size: 12px;
     color: #cccccc;
     font-style: italic;
+    
 }
+
+/* ===== style Login ===== */
+
+
 
 /* ===== style Footer ===== */
 
