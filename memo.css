@@ -1,0 +1,26 @@
+
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 10rem);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.box {
+    width: 10rem;
+    height: 10rem;
+}
+
+.blue-box {
+    background-color: blue;
+}
+
+.red-box {
+    background-color: red;
+}

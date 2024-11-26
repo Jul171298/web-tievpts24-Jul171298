@@ -65,7 +65,7 @@ body {
     transition: all 0.2s ease;
 }
 
-.input-field input:is(:focus,:valid){
+.input-field input:is(:focus, :valid){
     border-bottom-color: #203563;
 }
 
@@ -91,5 +91,17 @@ body {
 
 .forms .checkbox-text {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    margin-top: 20px;
+}
+
+.checkbox-text .container {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-content input{
+    margin: 0 8px -2px 4px;
+    accent-color: #4070f4;
 }
