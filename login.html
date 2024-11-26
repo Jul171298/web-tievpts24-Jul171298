@@ -1,10 +1,44 @@
-<!DOCTYPE html>
+<!DOCTYPE html!>
 <html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Games arcade - Login</title>
-        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Games arcade - Login</title>
+    <link rel="stylesheet" href="style-login" />
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <title>Login</title>
     </head>
-    <body class="login-page"></body>
+
+    <body>
+
+        <div class="container">
+            <div class="forms">
+                <span class="title">Login</span>
+
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your email" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" placeholder="Enter your password" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <lable for="logCheck" class="text">Remember me</lable>
+
+                            <a href="#" class="text">Forgot password</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </body>
 </html>
