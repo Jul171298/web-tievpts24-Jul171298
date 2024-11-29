@@ -14,6 +14,33 @@
 
     <body>
 
+        <header class="layout-header">
+            <div class="layout-container">
+                <img src="logo.png" alt="Logo" width="100">
+
+                <nav class="layout-nav">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="games.html">Games</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="signup.html">Register</a>
+                        </li>
+                        <li>
+                            <a href="login.html">Login</a>
+                        </li>
+                    </ul>
+                    
+                </nav>
+            </div>
+            </header>
+
         <div class="container">
             <div class="forms">
                 <span class="title">Login</span>
@@ -32,12 +59,22 @@
                     <div class="checkbox-text">
                         <div class="checkbox-content">
                             <input type="checkbox" id="logCheck">
-                            <lable for="logCheck" class="text">Remember me</lable>
+                            <label for="logCheck" class="text">Remember me</label>
                         </div>
 
-                        <a href="#" class="text">Forgot password</a>
+                        <a href="#" class="text">Forgot password?</a>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="button" value="Login Now">
                     </div>
                 </form>
+
+                <div class="login-signup">
+                    <span class="text">Not a member?
+                        <a href="signup.html" class="text signup-text">Signup now</a>
+                    </span>
+                </div>
             </div>
         </div>
 

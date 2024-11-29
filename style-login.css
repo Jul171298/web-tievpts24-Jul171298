@@ -12,7 +12,73 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #203563;
+    background-color: #18233b;
+}
+
+.layout-container {
+    margin-right: auto;
+    margin-left: auto;
+
+    max-width: 960px;
+}
+
+.layout-header {
+    background: #131C2F;
+    border-bottom: 1px solid rgba(233, 236, 243, 0.25);
+    box-shadow: 0px 4px 10px #000000;
+    padding: 12px 0;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.layout-header > .layout-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.layout-nav > ul {
+    list-style: none;
+
+    
+    margin-top:    0;
+    margin-bottom: 0;
+    padding-left:  0;
+
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.layout-nav > ul > li {
+    margin-left: 24px;
+
+}
+
+.layout-nav > ul > li:first-child {
+    margin-left: 0;
+}
+
+.layout-nav > ul > li > a {
+    font-weight:    bold;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    border-radius: 8px;
+    padding: 6px 10px;
+
+    display: block;
+    
+}
+
+.layout-nav > ul > li > a:hover,
+.layout-nav > ul > li:hover > a {
+    color: #24A3FF;
+    background: #E9ECF31A;
 }
 
 .container {
@@ -87,6 +153,8 @@ body {
 
 .input-field i.showHidePw {
     right: 0;
+    cursor: pointer;
+    padding: 10px;
 }
 
 .forms .checkbox-text {
@@ -101,7 +169,49 @@ body {
     align-items: center;
 }
 
-.checkbox-content input{
+.checkbox-content input {
     margin: 0 8px -2px 4px;
-    accent-color: #4070f4;
+    accent-color: #203563;
+}
+
+.forms .text {
+    color: #333;
+    font-size: 14px;
+}
+
+.forms a {
+    text-decoration: none;
+}
+
+.forms a.text {
+    color: #203563;
+}
+
+.forms a:hover {
+    text-decoration: underline;
+}
+
+.forms .button {
+    margin-top: 35px;
+}
+
+.forms .button input {
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    background-color: #203563;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button input:hover {
+    background-color: #2a4580;
+}
+
+.forms .login-signup {
+    margin-top: 30px;
+    text-align: center;
 }

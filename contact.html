@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Games Arcade - Contact</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="layout-header">
         <div class="layout-container">
@@ -29,73 +31,101 @@
                         <a href="login.html">Login</a>
                     </li>
                 </ul>
-                
+
             </nav>
         </div>
-        </header>
+    </header>
 
-        <div class="root-content">
-                
-            <div class="search-container">
-                <div class="breadcrumbs">
-                    <a href="about.html">About</a> &gt;
-                    <span>Contact</span>
-                </div>
-                <div class="search-bar">
-                    <input type="text" id="search" placeholder="Search">
-                    <button>🔍</button>
-                </div>
+    <div class="root-content">
+
+        <div class="search-container">
+            <div class="breadcrumbs">
+                <a href="about.html">About</a> &gt;
+                <span>Contact</span>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="search" placeholder="Search">
+                <button>🔍</button>
             </div>
         </div>
+    </div>
 
-        <div class="about-page">
-            <aside class="sidebar">
-                <a href="team.html">Team</a>
-                <a href="location.html" class="active">Location</a>
-                <a href="contact.html">Contact</a>
-            </aside>
+    <div class="about-page">
+        <aside class="sidebar">
+            <a href="team.html">Team</a>
+            <a href="location.html" class="active">Location</a>
+            <a href="contact.html">Contact</a>
+        </aside>
 
-            <div class="content">
-                <h1>Contact Us</h1>
-                <div class="contact-section">
-                    <div class="contact-info">
-                        <h2>Our Contact Information</h2>
-                        <p><strong>Address:</strong> 123 Gaming Street, Game City, GC 45678</p>
-                        <p><strong>Phone:</strong> <a href="tel:+123456789">+123 456 789</a></p>
-                        <p><strong>Email:</strong> <a href="mailto:support@upgames.com">support@upgames.com</a></p>
-                    </div>
+        <div class="content">
+            <div class="contact-section">
+                <div class="contact-info">
+                    <h2>Our Contact Information</h2>
+                    <p><strong>Address:</strong> 123 Gaming Street, Game City, GC 45678</p>
+                    <p><strong>Phone:</strong> <a href="tel:+123456789">+123 456 789</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:support@upgames.com">support@upgames.com</a></p>
                 </div>
-                <div class="social-links">
-                    <h2>Follow Us</h2>
-                    <a href="#" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
-                    <a href="#" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
-                    <a href="#" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            </div>
+
+            <div class="contact-form-section">
+                <h2>Contact Us</h2>
+                <div class="contact-form-container">
+                    <form action="submit_form.php" method="POST">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Type your message here..."
+                                required></textarea>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </div>
+                    </form>
                 </div>
+            </div>
+
+            <div class="social-links">
+                <h2>Follow Us</h2>
+                <a href="#" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
             </div>
         </div>
+    </div>
 
-        <footer class="layout-footer">
-            <div class="layout-container">
-                <div class="footer-logo">
-                    <p>&copy; 2024 Up Games. All rights reserved.</p>
-                </div>
-                
-                <nav class="footer-nav">
-                    <a href="index.html">Home</a>
-                    <a href="games.html">Games</a>
-                    <a href="about.html">About</a>
-                    <a href="signup.html">Register</a>
-                    <a href="login.html">Login</a>
-                </nav>
-                
-                <div class="footer-social">
-                    <a href="#"><img src="facebook-icon.png" alt="Facebook" width="20"></a>
-                    <a href="#"><img src="twitter-icon.png" alt="Twitter" width="20"></a>
-                    <a href="#"><img src="instagram-icon.png" alt="Instagram" width="20"></a>
-                    <a href="#"><img src="youtube-icon.png" alt="YouTube" width="20"></a>
-                </div>
+    <footer class="layout-footer">
+        <div class="layout-container">
+            <div class="footer-logo">
+                <p>&copy; 2024 Up Games. All rights reserved.</p>
             </div>
-        </footer>
+
+            <nav class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="games.html">Games</a>
+                <a href="about.html">About</a>
+                <a href="signup.html">Register</a>
+                <a href="login.html">Login</a>
+            </nav>
+
+            <div class="footer-social">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook" width="20"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter" width="20"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram" width="20"></a>
+                <a href="#"><img src="youtube-icon.png" alt="YouTube" width="20"></a>
+            </div>
+        </div>
+    </footer>
 </body>
-</html>
 
+</html>
