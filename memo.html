@@ -1,48 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>memo</title>
-        <script src="memo.js"></script>
-        <link rel="stylesheet" href="memo.css">
-    </head>
-
-    <body>
-        <div id="root" class="center">
-            <div class="grid">
-                <div class="box blue-box" onclick="handleBoxClick(event)">
-                </div>
-                <div class="box blue-box" onclick="handleBoxClick(event)">
-                </div>
-                <div class="box blue-box" onclick="handleBoxClick(event)">
-                </div>
-                <div class="box blue-box" onclick="handleBoxClick(event)">
-                </div>
-                <div class="box blue-box" onclick="handleBoxClick(event)">
-                </div>
-                <div class="box blue-box" onclick="handleBoxClick(event)">
-                </div>
-                <div class="box blue-box" onclick="handleBoxClick(event)">
-                </div>
-                <div class="box blue-box" onclick="handleBoxClick(event)">
-                </div>
-                <div class="box blue-box" onclick="handleBoxClick(even)">
-                </div>
-                <div class="box blue-box" onclick="handleBoxClick(event)">
-                </div>
-                <div class="box blue-box" onclick="handleBoxClick(event)">
-                </div>
-                <div class="box blue-box" onclick="handleBoxClick(event)">
-                </div>
-                <div class="box blue-box" onclick="handleBoxClick(event)">
-                </div>
-                <div class="box blue-box" onclick="handleBoxClick(event)">
-                </div>
-                <div class="box blue-box" onclick="handleBoxClick(event)">
-                </div>
-                <div class="box blue-box" onclick="handleBoxClick(event)">
-                </div>
-            </div>
-        </div>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Memory Card Game</title>
+    <script src="memo.js" defer></script>
+    <link rel="stylesheet" href="memo.css">
+    <script src="memo.js"></script>
+</head>
+<body>
+    <div class="game-container">
+        <h1>Memory Card Game</h1>
+        <div id="grid" class="grid"></div>
+        <p id="message"></p>
+        <button onclick="resetGame()">Reset</button>
+    </div>
+</body>
 </html>

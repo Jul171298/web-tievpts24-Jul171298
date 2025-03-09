@@ -1,26 +1,56 @@
-
-
-.center{
+body {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-color: #F7F6F7;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.game-container {
+    text-align: center;
+    background: #F6BE55;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
 }
 
+h1 {
+    text-transform: uppercase;
+
+}
+button {
+    background: #D49E94;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
 .grid {
     display: grid;
-    grid-template-columns: repeat(4, 10rem);
-    gap: 1rem;
-    padding: 1rem;
+    grid-template-columns: repeat(4, 150px);
+    gap: 15px;
+    margin-top: 20px;
 }
-
 .box {
-    width: 10rem;
-    height: 10rem;
+    width: 150px;
+    height: 150px;
+    background-color: #D9E6B3;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-.blue-box {
-    background-color: blue;
-}
-
-.red-box {
-    background-color: red;
+.box img {
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+    border-radius: 10px;
 }
