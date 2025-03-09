@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f0f0f0, #dcdcdc);
+    font-family: 'Poppins', sans-serif;
+}
+.game-container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+h1 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(3, 120px);
+    gap: 10px;
+    margin-top: 20px;
+}
+.cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    background: #fff;
+    border-radius: 10px;
+    border: 2px solid #555;
+    font-size: 3em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.cell:hover {
+    background: #f1f1f1;
+}
+.cell.winning {
+    background: #4CAF50;
+    color: white;
+}
