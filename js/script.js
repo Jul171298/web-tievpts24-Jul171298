@@ -11,3 +11,5 @@ function loadComponent(url, placeholderId) {
         })
         .catch(error => console.error(`Error loading ${url}:`, error));
 }
+
+

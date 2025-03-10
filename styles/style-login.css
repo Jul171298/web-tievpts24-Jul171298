@@ -215,3 +215,81 @@ body {
     margin-top: 30px;
     text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+    .layout-header {
+        padding: 10px;
+    }
+
+    .layout-header > .layout-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .layout-nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .layout-nav ul li {
+        margin: 5px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .container {
+        max-width: 100%;
+        width: 90%;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 250px;
+    }
+
+    .container .forms {
+        padding: 20px;
+    }
+
+    .container .forms .title {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .forms .title::before {
+        width: 25px;
+    }
+
+    .forms .input-field {
+        margin-top: 20px;
+        height: 45px;
+    }
+
+    .input-field input {
+        font-size: 14px;
+        padding: 0 30px;
+    }
+
+    .input-field i {
+        font-size: 20px;
+    }
+
+    .forms .checkbox-text {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .forms .button {
+        margin-top: 25px;
+    }
+
+    .forms .button input {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .forms .login-signup {
+        margin-top: 20px;
+    }
+}

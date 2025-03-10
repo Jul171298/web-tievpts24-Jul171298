@@ -155,7 +155,6 @@ a {
 
 .about-page {
     display: flex;
-    width: 100vw;
     min-height: 100vh;
     overflow-x: hidden;
 }
@@ -385,29 +384,7 @@ article {
     margin-bottom: 20px;
 }
 
-@media only screen and (max-width: 800px) {
 
-
-    .team-members {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media only screen and (max-width: 600px) {
-
-    .about-page {
-        flex-direction: column;
-    }
-
-    .sidebar {
-        width: 100%;
-    }
-
-    .team-members {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-}
 
 .team-member {
     background-color: #1b1f36;
@@ -776,3 +753,391 @@ h1 {
 .footer-social a img:hover {
     filter: brightness(1);
 }
+
+
+@media screen and (max-width: 768px) {
+    /* ===== Home page with header and footer ===== */
+
+    .layout-container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .layout-header {
+        padding: 10px;
+    }
+
+    .layout-header > .layout-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .layout-nav ul {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .layout-nav ul li {
+        margin: 5px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .root-content {
+        margin-top: 120px;
+        padding: 10px;
+    }
+
+    .search-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+        margin-top: 140px;
+    }
+
+    .home-lable {
+        margin: 20px 0;
+    }
+
+    .search-bar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        max-width: 400px;
+        background: #1c1c2b;
+        border-radius: 8px;
+        padding: 5px;
+    }
+
+    .search-bar input[type="text"] {
+        flex-grow: 1;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        background: transparent;
+        color: white;
+        outline: none;
+    }
+
+    .search-bar button {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #3a3a5a;
+        border: none;
+        cursor: pointer;
+        border-radius: 8px;
+    }
+
+    .article-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .wide {
+        grid-column: span 1;
+    }
+
+    .layout-footer {
+        width: 100%;
+        max-width: 100%;
+        padding: 20px 0;
+        margin: 0 auto;
+        text-align: center;
+        overflow: hidden;
+    } 
+
+
+    .layout-footer .layout-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-social {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+        /* about us and sidebar */
+    .about-page {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .sidebar {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        border-right: none;
+        border-bottom: 1px solid #1c2a46;
+        padding: 10px 0;
+    }
+
+    .sidebar a {
+        padding: 8px 15px;
+    }
+
+    .breadcrumbs{
+        margin: 20px 0;
+    }
+
+
+    .content {
+        padding: 20px;
+        text-align: left;
+    }
+
+    .about-section h2,
+    .customers-section h3,
+    .values-section h3,
+    .environment-section h3 {
+        font-size: 22px;
+    }
+
+    .about-section p,
+    .values-section p,
+    .environment-section p {
+        font-size: 14px;
+    }
+
+
+    .about-image img {
+        width: 80%;
+        max-width: 300px;
+    }
+
+
+    .customers {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .customer {
+        width: 45%;
+        max-width: 150px;
+    }
+
+    .customer .logo img {
+        width: 60px;
+    }
+
+
+    .values-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .values-image img {
+        width: 80%;
+        max-width: 300px;
+    }
+
+    .team-intro {
+        margin-bottom: 20px;
+        padding: 0 10px;
+    }
+
+    .team-intro h2 {
+        font-size: 22px;
+        margin-bottom: 8px;
+    }
+
+    
+    .team-members {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 0 10px;
+    }
+
+    
+    .team-member {
+        padding: 25px;
+        border-radius: 6px;
+    }
+
+    .team-member h3 {
+        font-size: 18px;
+    }
+
+    .team-member p {
+        font-size: 13px;
+    }
+
+    
+    .profile-pic img {
+        width: 70px;
+        height: 70px;
+    }
+
+    
+    .job-openings {
+        padding: 15px;
+        margin-top: 15px;
+    }
+
+    .job-openings h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .job {
+        padding: 15px;
+        border-radius: 6px;
+        margin-bottom: 10px;
+    }
+
+    .job h4 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .job p {
+        font-size: 13px;
+    }
+
+    .apply-button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+
+    h1 {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .map-container {
+        width: 100%;
+        border-radius: 6px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+    }
+
+
+    .location-description p {
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0 10px;
+    }
+
+    .contact-info {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .contact-info h2 {
+        font-size: 20px;
+    }
+
+    .contact-info p {
+        font-size: 14px;
+    }
+
+    .contact-form-section {
+        padding: 20px;
+        margin-top: 15px;
+    }
+
+    .contact-form-section h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .contact-form-container {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+
+    .form-group {
+        margin-bottom: 12px;
+    }
+
+    .form-group label {
+        font-size: 14px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .form-actions .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .social-links {
+        padding: 15px;
+    }
+
+    .social-links a img {
+        width: 35px;
+        height: 35px;
+    }
+
+
+    .games-section {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        width: 95%;
+        padding: 30px 0;
+    }
+
+    .game-card {
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .game-card img {
+        height: 220px;
+        border-radius: 8px;
+    }
+
+    .game-card h3 {
+        font-size: 1rem;
+        margin: 10px 0;
+    }
+
+    .game-card p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .developer {
+        font-size: 12px;
+        margin-top: 8px;
+    }
+
+}
+
+
