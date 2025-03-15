@@ -1,6 +1,7 @@
 let currentValue = "X";
 const grid = document.getElementById("grid");
 const cells = [];
+const gameContainer = document.querySelector(".game-container");
 
 for (let row = 0; row < 3; row++) {
     for (let col = 0; col < 3; col++) {
@@ -39,7 +40,30 @@ function checkWin() {
             cellB.classList.add("winning");
             cellC.classList.add("winning");
             grid.style.pointerEvents = "none";
+            showRestartButton();
             return;
         }
+    }
+}
+
+function showRestartButton() {
+    const restartButton = document.createElement("button");
+    restartButton.textContent = "Play Again";
+    restartButton.classList.add("restart-button");
+    restartButton.addEventListener("click", resetGame);
+    gameContainer.appendChild(restartButton);
+}
+
+function resetGame() {
+    cells.forEach(cell => {
+        cell.textContent = "";
+        cell.classList.remove("winning");
+    });
+    grid.style.pointerEvents = "auto";
+    currentValue = "X";
+    
+    const restartButton = document.querySelector(".restart-button");
+    if (restartButton) {
+        restartButton.remove();
     }
 }

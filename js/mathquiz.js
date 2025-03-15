@@ -1,4 +1,4 @@
-// mathquiz.js
+
 let num1, num2, correctAnswer, operation, score = 0, questionCount = 0;
 const operators = ['+', '-', '*'];
 const totalQuestions = 5;
